@@ -1,3 +1,4 @@
+// https://www.simplifycreateinspire.com/advent-calendar-activities/
 const adventInfo = [
     {
         id: 1,
@@ -168,3 +169,5 @@ const adventInfo = [
         resources: ['https://www.aheadofthyme.com/best-christmas-cookies-recipes/']
     },
 ]
+
+export default adventInfo;

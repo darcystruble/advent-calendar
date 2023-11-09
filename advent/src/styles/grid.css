@@ -1,0 +1,83 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+/* all outer advent styling */
+.advent-outer {
+    box-sizing: border-box;
+    background-color: pink;
+    border: 2px solid pink;
+    width: 360px;
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(4 90px);
+    grid-template-rows: repeat(4 90px);
+    column-gap: 4px;
+    row-gap: 4px;
+}
+/* day sizes for grid layout */
+.day1, .day9, .day15, .day20 {
+    background-color: orange;
+    grid-area: large1;
+}
+.day2, .day10, .day13, .day21 {
+    background-color: green;
+    grid-area: long1;
+}
+.day3, .day11, .day14, .day22 {
+    background-color: aqua;
+    grid-area: long2;
+}
+.day4, .day7, .day17, .day19 {
+    background-color: palevioletred;
+    grid-area: wide1;
+}
+.day5, .day12, .day18, .day23 {
+    background-color: cadetblue;
+    grid-area: wide2;
+}
+.day6, .day8, .day16, .day24 {
+    background-color: coral;
+    grid-area: large2;
+}
+/* grid template layouts */
+.outer-1-6 {
+    grid-template-areas: 
+      "large1 large1 long1 long2"
+      "large1 large1 long1 long2"
+      "wide1 wide1 large2 large2"
+      "wide2 wide2 large2 large2";
+}
+.outer-7-12 {
+    grid-template-areas: 
+      "wide1 wide1 large2 large2"
+      "large1 large1 large2 large2"
+      "large1 large1 long1 long2"
+      "wide2 wide2 long1 long2";
+}
+.outer-13-18 {
+    grid-template-areas: 
+      "long1 long2 large1 large1"
+      "long1 long2 large1 large1"
+      "large2 large2 wide1 wide1"
+      "large2 large2 wide2 wide2";
+}
+.outer-19-24 {
+    grid-template-areas: 
+      "wide1 wide1 large1 large1"
+      "long1 long2 large1 large1"
+      "long1 long2 large2 large2"
+      "wide2 wide2 large2 large2";
+}
+
+
+/* Flex for the outer container */
+.all-advent-outer {
+    max-width: 725px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
